@@ -1,0 +1,6 @@
+46 is Bad
+79 is Passable
+21 is Bad
+0 is Bad
+4 is Bad
+82 is Passable
