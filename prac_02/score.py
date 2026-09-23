@@ -8,6 +8,8 @@ def main():
     user_score = float(input("Enter score: "))
     print(f"User's grade is {determine_grade(user_score)}")
     random_score = random.randint(0,100)
+    if determine_grade(user_score) == "Excellent":
+        print("Well done, you get a prize!")
     print(f"Random Score: {random_score}")
     print(f"Random grade is {determine_grade(random_score)}")
 
