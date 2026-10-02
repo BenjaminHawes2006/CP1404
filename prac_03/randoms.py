@@ -15,3 +15,5 @@
 # The smallest number I could have seen would be 2.500000000000000 and the largest would be
 # 5.499999999999999.
 
+import random
+print(random.randint(0,100))
