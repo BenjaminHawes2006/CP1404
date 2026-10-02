@@ -15,11 +15,12 @@ MIN_PRICE = 1.00
 MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 NUMBER_OF_DAYS = 0
+FILENAME = "Capitalist_Conrad_Price_Tracker.txt"
 
 price = INITIAL_PRICE
-print(f"${price:,.2f}")
 
-print(f"Starting price is ${INITIAL_PRICE}")
+out_file = open(FILENAME, "w")
+print(f"Starting price is ${INITIAL_PRICE}", file=out_file)
 
 while MIN_PRICE <= price <= MAX_PRICE:
     price_change = 0
@@ -36,4 +37,6 @@ while MIN_PRICE <= price <= MAX_PRICE:
 
     NUMBER_OF_DAYS += 1
     price *= (1 + price_change)
-    print(f"On day {NUMBER_OF_DAYS}, the price is ${price:,.2f}")
+    print(f"On day {NUMBER_OF_DAYS}, the price is ${price:,.2f}", file=out_file)
+
+out_file.close()
