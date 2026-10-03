@@ -6,6 +6,10 @@ Answer the following questions:
 3. Could you change the code to avoid the possibility of a ZeroDivisionError?
 """
 
+# 1) The program will present with a value error if the numerator or denominator are not integers
+# 2) The program will present with a zero division error if the denominator is 0
+# 3) To avoid the zero division error, you can check if the denominator is 0 before proceeding
+
 try:
     numerator = int(input("Enter the numerator: "))
     denominator = int(input("Enter the denominator: "))
