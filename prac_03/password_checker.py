@@ -28,7 +28,9 @@ def main():
 def is_valid_password(password):
     """Determine if the provided password is valid."""
     # TODO: if length is wrong, return False
-
+    length_of_password = len(password)
+    if 2 > length_of_password > 6:
+        return False
     number_of_lower = 0
     number_of_upper = 0
     number_of_digit = 0
