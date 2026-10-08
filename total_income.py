@@ -17,7 +17,7 @@ def main():
     for month in range(1, months + 1):
         income = incomes[month - 1]
         total += income
-        print("Month {:2} - Income: ${:10.2f} Total: ${:10.2f}".format(month, income, total))
+        print(f"Month {month} - Income: ${income:10} Total: ${total:10}")
 
 
 main()
