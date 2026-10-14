@@ -11,9 +11,10 @@ print(CODE_TO_NAME)
 state_code = input("Enter short state: ")
 valid_state_code = state_code.upper()
 
-while state_code != "":
-    if valid_state_code in CODE_TO_NAME:
-        print(valid_state_code, "is", CODE_TO_NAME[valid_state_code])
-    else:
-        print("Invalid short state")
-    state_code = input("Enter short state: ")
+if valid_state_code in CODE_TO_NAME:
+    print(valid_state_code, "is", CODE_TO_NAME[valid_state_code])
+else:
+    print("Invalid short state")
+
+for short_state, long_state in CODE_TO_NAME.items():
+    print(f"{short_state:3} is {long_state}")
