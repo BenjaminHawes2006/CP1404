@@ -9,6 +9,7 @@ user_words = list(user_text.split(" "))
 word_to_count = {}
 
 for word in user_words:
+    word = word.lower()
     if word not in word_to_count.keys():
         word_to_count[word] = 1
     else:
